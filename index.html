@@ -7,19 +7,22 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-  <div class="max-w-2xl mx-auto py-10">
-    <div class="text-center mb-6">
-      <img src="https://play-lh.googleusercontent.com/NL8s9D9gEl_3_8DOZ3T50E6K3HYgAgytHqI1ZkPNiZ8_zKxH9LTVWv2Fb1n2ViXNSw" alt="Free Fire" class="w-16 h-16 mx-auto rounded-full">
-      <h1 class="text-2xl font-bold mt-2">Free Fire</h1>
+  <div class="max-w-3xl mx-auto px-4 py-10">
+    <div class="text-center mb-8">
+      <img src="https://play-lh.googleusercontent.com/NL8s9D9gEl_3_8DOZ3T50E6K3HYgAgytHqI1ZkPNiZ8_zKxH9LTVWv2Fb1n2ViXNSw"
+           alt="Free Fire" class="w-20 h-20 mx-auto rounded-full shadow-md">
+      <h1 class="text-3xl font-bold mt-3">Free Fire</h1>
       <p class="text-sm text-gray-400">com.dts.freefireth | v1.109.1</p>
-      <button id="run-command" class="bg-blue-600 px-4 py-2 rounded mt-4 hover:bg-blue-700">Run Shell Command</button>
+      <button id="run-command" class="mt-5 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded text-white shadow">
+        Run Shell Command
+      </button>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="modules"></div>
+    <div class="grid gap-6 sm:grid-cols-2" id="modules"></div>
 
-    <div id="output" class="mt-6 bg-gray-800 p-4 rounded text-green-400 text-sm whitespace-pre-wrap"></div>
+    <div id="output" class="mt-8 bg-gray-800 p-4 rounded text-green-400 text-sm whitespace-pre-wrap hidden"></div>
   </div>
 
   <script src="script.js"></script>
 </body>
-</html
+</html>
