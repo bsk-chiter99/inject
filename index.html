@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optimasi Touch Layar Free Fire</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Fire Module UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Optimasi Touch Layar</h1>
-        <p>Peningkatan respons sentuhan untuk Free Fire</p>
-        
-        <div class="settings">
-            <h2>Pengaturan Sensitivitas</h2>
-            <label for="sensitivity">Sensitivitas Touch Layar</label>
-            <input type="range" id="sensitivity" min="1" max="10" value="5">
-            <span id="sensitivityValue">5</span>
-
-            <h2>Pengaturan Lainnya</h2>
-            <label for="dragSpeed">Kecepatan Drag</label>
-            <input type="range" id="dragSpeed" min="1" max="10" value="5">
-            <span id="dragSpeedValue">5</span>
-
-            <label for="swipeSpeed">Kecepatan Swipe</label>
-            <input type="range" id="swipeSpeed" min="1" max="10" value="5">
-            <span id="swipeSpeedValue">5</span>
-
-            <button onclick="applySettings()">Terapkan Pengaturan</button>
-        </div>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="max-w-2xl mx-auto py-10">
+    <div class="text-center mb-6">
+      <img src="https://play-lh.googleusercontent.com/NL8s9D9gEl_3_8DOZ3T50E6K3HYgAgytHqI1ZkPNiZ8_zKxH9LTVWv2Fb1n2ViXNSw" alt="Free Fire" class="w-16 h-16 mx-auto rounded-full">
+      <h1 class="text-2xl font-bold mt-2">Free Fire</h1>
+      <p class="text-sm text-gray-400">com.dts.freefireth | v1.109.1</p>
+      <button id="run-command" class="bg-blue-600 px-4 py-2 rounded mt-4 hover:bg-blue-700">Run Shell Command</button>
     </div>
 
-    <script src="script.js"></script>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="modules"></div>
+
+    <div id="output" class="mt-6 bg-gray-800 p-4 rounded text-green-400 text-sm whitespace-pre-wrap"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html>
+</html
