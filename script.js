@@ -29,15 +29,15 @@ if (!container) {
     const key = mod.title.replace(/\s+/g, "_");
     const state = localStorage.getItem(key) === "true";
     const card = document.createElement("div");
-    card.className = "bg-gray-800 p-5 rounded-lg shadow-lg flex flex-col justify-between h-full";
+    card.className = "bg-gray-800 p-5 rounded-lg shadow-lg flex flex-col justify-between h-full card";
 
     card.innerHTML = `
       <h2 class="font-semibold text-lg mb-2">${mod.title}</h2>
       <p class="text-sm text-gray-400 mb-4">${mod.desc}</p>
       <label class="inline-flex items-center cursor-pointer">
         <input type="checkbox" class="sr-only peer" id="${key}" ${state ? "checked" : ""}>
-        <div class="w-11 h-6 bg-gray-600 rounded-full peer-checked:bg-blue-500 relative transition">
-          <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-200 peer-checked:translate-x-5"></div>
+        <div class="w-11 h-6 bg-gray-600 rounded-full switch">
+          <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-200 switch-slider"></div>
         </div>
       </label>
     `;
