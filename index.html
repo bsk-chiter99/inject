@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Fire Module UI</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Menambahkan efek transisi pada tombol switch */
+    .switch {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .switch input:checked + .switch-slider {
+      background-color: #3b82f6;
+    }
+    .switch-slider {
+      transition: transform 0.3s ease;
+    }
+    .switch input:checked + .switch-slider {
+      transform: translateX(20px);
+    }
+
+    /* Menambahkan animasi bayangan untuk kartu */
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
   <div class="max-w-3xl mx-auto px-4 py-10">
